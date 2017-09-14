@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="app">
+<button v-on:click="show=!show">dsad</button>
+<transition name="ww">
+	<child v-if="show" class="fan"></child>
+</transition>
+</div>
+	<script type="text/javascript" src="https://vuejs.org/js/vue.js"></script>
+	<script type="text/javascript">
+	
+	var child={
+		template:'<div>wwdalsdj</div>'
+	};
+		new Vue({
+			data:{
+				show:true
+			},
+			components:{
+				child
+			}
+		}).$mount("#app");
+	</script>
+	<style>
+		.ww-enter-active, .ww-leave-active {
+  			transition: all .2s
+		}
+		.ww-enter, .ww-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+		
+		  transform:translateX(300px);
+		  transform: rotate(180deg);
+		}
+		/*.ww-enter-active{
+			transition:opacity .5s linear;
+		}
+		.ww-enter{
+			opacity: 0
+		}*/
+		.fan{
+			margin:200px;
+			width:100px;
+		}
+	</style>
+</body>
+</html>
