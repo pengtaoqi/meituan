@@ -1,3 +1,3 @@
-![](https://github.com/guodongxiaren/ImageCache/raw/master/images/banner2.jpg)  
+![](https://github.com/guodongxiaren/ImageCache/raw/meituan/tree/master/static/images)  
 
 
